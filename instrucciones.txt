@@ -1,0 +1,29 @@
+sudo mysql
+
+//////////////////////////////////
+
+CREATE DATABASE practica;
+
+CREATE USER 'anico'@'localhost' IDENTIFIED BY 'anico';
+
+GRANT ALL PRIVILEGES ON practica.* TO 'anico'@'localhost';
+
+FLUSH PRIVILEGES;
+
+EXIT;
+
+//////////////////////////////////
+
+mysql -u anico -p practica < bd.sql
+
+//////////////////////////////////
+
+php -S localhost:8000
+
+//////////////////////////////////
+
+http://localhost:800
+
+//////////////////////////////////
+
+mysqldump -u anico -p practica --no-tablespaces > bd.sql
