@@ -1,4 +1,13 @@
 <?php
+//Begin Really Simple Security session cookie settings
+@ini_set('session.cookie_httponly', true);
+@ini_set('session.cookie_secure', true);
+@ini_set('session.use_only_cookies', true);
+//END Really Simple Security cookie settings
+//Begin Really Simple Security key
+define('RSSSL_KEY', 'fXfyZwXPOECvWlQZ5CwE69OlmSjaKnoExkpCEfImfswt3zRlIJfGfHDlOUsCzQnT');
+//END Really Simple Security key
+
 /**
  * The base configuration for WordPress
  *
@@ -20,13 +29,13 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'practica' );
+define( 'DB_NAME', 'aitana_bd' );
 
 /** Database username */
-define( 'DB_USER', 'anico' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'anico' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
